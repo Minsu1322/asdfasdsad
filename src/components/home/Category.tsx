@@ -88,7 +88,7 @@ export default function Category() {
         {isPending
           ? Array.from({ length: 10 }).map((_, index) => <SkeletonItem key={index} />)
           : bookItem?.map((item) => (
-              <Link key={item.isbn13} href={`https://bookbook.vercel.app/${item.isbn13}`}>
+              <Link key={item.isbn13} href={`https://bookbook-alpha.vercel.app/${item.isbn13}`}>
                 <CategoryItem key={item.itemId} item={item} />
               </Link>
             ))}

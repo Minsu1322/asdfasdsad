@@ -106,7 +106,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           {isPending
             ? Array.from({ length: 40 }).map((_, index) => <SkeletonItem key={index} />)
             : data?.item.map((item) => (
-                <Link key={item.isbn13} href={`https://bookbook.vercel.app/${item.isbn13}`}>
+                <Link key={item.isbn13} href={`https://bookbook-alpha.vercel.app/${item.isbn13}`}>
                   <CategoryItem key={item.itemId} item={item} isForeign={genreData === foreignGenres} />
                 </Link>
               ))}
